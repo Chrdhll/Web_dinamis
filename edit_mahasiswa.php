@@ -131,10 +131,10 @@
             include 'koneksi.php';
             $tgl = $_POST['thn'] . '-' . $_POST['bln'] . '-' . $_POST['tgl'];
             $hobies = implode(",", $_POST['hobi']);
-            $sql = mysqli_query($db,"UPDATE mahasiswa SET nama = '$_POST[nama]',email = '$_POST[email]',tanggal_lahir = '$tgl',jenis_kelamin = '$_POST[jk]',hobi = '$hobies',alamat = '$_POST[alamat]' WHERE nim='$_GET[id_edit]'");
+            $sql = mysqli_query($db, "UPDATE mahasiswa SET nama = '$_POST[nama]',email = '$_POST[email]',tanggal_lahir = '$tgl',jenis_kelamin = '$_POST[jk]',hobi = '$hobies',alamat = '$_POST[alamat]' WHERE nim='$_GET[id_edit]'");
 
             if ($sql) {
-                echo "<script> alert('Data berhasil disimpan')</script>";
+                echo "<script> alert('Data berhasil dirubah')</script>";
                 echo "<script>window.location.href='dataMahasiswa.php'</script>";
             }
         }
