@@ -59,19 +59,19 @@
             $page=isset($_GET['p']) ? $_GET['p'] : 'home';
             if ($page=='home') include 'home.php';
 
-            if ($page=='mhs') include 'dataMahasiswa.php';
-            if ($page=='create_mhs') include 'mahasiswa.php';
-            if ($page=='edit_mhs') include 'edit_mahasiswa.php';
-            if ($page=='hapus_mhs') include 'delete_mahasiswa.php';
+            if ($page=='mhs') include 'mahasiswa.php';
+            // if ($page=='create_mhs') include 'mahasiswa.php';
+            // if ($page=='edit_mhs') include 'edit_mahasiswa.php';
+            // if ($page=='hapus_mhs') include 'delete_mahasiswa.php';
 
             if ($page=='prodi') include 'prodi.php';
-            if ($page=='create_prodi') include 'create_prodi.php';
-            if ($page=='edit_prodi') include 'edit_prodi.php';
-            if ($page=='hapus_prodi') include 'delete_prodi.php';
+            // if ($page=='create_prodi') include 'create_prodi.php';
+            // if ($page=='edit_prodi') include 'edit_prodi.php';
+            // if ($page=='hapus_prodi') include 'delete_prodi.php';
             
             if ($page=='dosen') include 'dosen.php';
-            if ($page=='edit_dosen') include 'edit_dosen.php';
-            if ($page=='create_dosen') include 'create_dosen.php';
+            // if ($page=='edit_dosen') include 'edit_dosen.php';
+            // if ($page=='create_dosen') include 'create_dosen.php';
         ?>
     </div>
 </body>
