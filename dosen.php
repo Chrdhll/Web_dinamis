@@ -10,7 +10,9 @@ switch ($aksi) {
 
         <a href="index.php?p=dosen&aksi=tambah" class="btn btn-primary mb-3">Tambah Dosen</a>
 
-        <table class="table table-striped table-hover border border-primary">
+        <table id="tabel-dosen" class="table table-striped table-hover border border-primary">
+            <thead>
+
             <tr>
                 <th>No</th>
                 <th>Nip</th>
@@ -21,7 +23,10 @@ switch ($aksi) {
                 <th>Alamat</th>
                 <th>Aksi</th>
             </tr>
+            </thead>
 
+            <tbody>
+            
             <?php
             include 'koneksi.php';
             $ambil = mysqli_query($db, "SELECT * FROM prodi,dosen WHERE prodi.id=dosen.prodi_id");
@@ -45,6 +50,8 @@ switch ($aksi) {
                 $no++;
             }
             ?>
+                
+          </tbody>
 
         </table>
     <?php
